@@ -66,7 +66,8 @@
         <button id="avatarDelBtn" type="button" class="hidden">프로필 사진 지우기</button>
         <button id="renameBtn" type="button">이름 바꾸기</button>
         <button id="animalBtn" type="button">공감 캐릭터: <span id="animalName">햄스터</span></button>
-        <button id="hamBtn" type="button" class="pc-only">입력 중 햄스터: <span id="hamName">켜짐</span></button>
+        <button id="petBtn" type="button">입력 중 캐릭터: <span id="petName">햄스터</span></button>
+        <button id="hamBtn" type="button" class="pc-only">입력 중 캐릭터 보이기: <span id="hamName">켜짐</span></button>
         <button id="skinBtn" type="button" class="pc-only">엑셀 화면: <span id="skinName">켜짐</span></button>
         <button id="logoutBtn" type="button">로그아웃</button>
       </div>
@@ -128,6 +129,19 @@
       <button type="button" data-a="h"><img src="reactions/h_heart.png" alt="" width="72" height="72"><span>햄스터</span></button>
     </div>
     <button id="animalCancel" type="button">닫기</button>
+  </div>
+</div>
+
+<!-- 입력 중 캐릭터 고르기 -->
+<div id="petSheet" class="sheet hidden">
+  <div class="sheet-box">
+    <div class="animal-title">글 쓰는 동안 나올 캐릭터를 골라 주세요</div>
+    <div class="pet-sub">고른 캐릭터는 내 화면과 상대 화면에 똑같이 나와요</div>
+    <div class="animal-pick pet-pick">
+      <button type="button" data-p="h"><span class="pet-prev"></span><span>햄스터</span></button>
+      <button type="button" data-p="r"><span class="pet-prev"></span><span>리트리버</span></button>
+    </div>
+    <button id="petCancel" type="button">닫기</button>
   </div>
 </div>
 
