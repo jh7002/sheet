@@ -295,3 +295,9 @@ body.xl .xl-top{display:flex}
 body.xl .row,body.xl .xl-hrow{gap:0}
 body.xl .msg-inner > *{grid-row:1;border-right:1px solid var(--xgrid);border-bottom:1px solid var(--xgrid);min-width:0}
 body.xl .day{padding-left:0}
+/* 설치한 앱 창에서는 창 제목줄이 따로 있으니 가짜 제목줄은 숨김 */
+@media (display-mode: standalone){ body.xl .xl-title{display:none} }
+/* 엑셀 화면의 보내기 단추를 잘 보이게 */
+body.xl .send{border-color:#c6c6c6;color:var(--xg);background:#fff}
+body.xl .send:hover{background:#e8f1eb}
+body.xl .send:disabled{opacity:.5}
